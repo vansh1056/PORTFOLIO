@@ -27,6 +27,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    ma
 }
 .logo{
     width: 140px;
@@ -197,6 +198,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    height: 100%;
 }
 .layer{
     width: 100%;
