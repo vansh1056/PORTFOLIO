@@ -27,12 +27,12 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    ma
 }
 
 .logo{
     width: 140px;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -71,6 +71,7 @@ nav ul li a:hover::after{
     color: #000080;
 }
 /* <!-- ----------about------------ --> */
+
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -136,7 +137,157 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-/* <!-- <------------------services-------------->  */
+/* Base Styles */
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.experience-list, .education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+}
+
+.experience-card, .education-card {
+    background-color: #080808;
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover, .education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-info, .education-info {
+    margin-top: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.year {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Icons */
+.experience-card i, .education-card i {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.experience-card:hover i, .education-card:hover i {
+    color: #000;
+}
+
+/* Tech Stack Section */
+#tech-stack {
+    padding: 50px 0;
+    background-color: #080808;
+    text-align: center;
+}
+
+#tech-stack .sub-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech {
+    text-align: center;
+    width: 100px;
+}
+
+.tech img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech img:hover {
+    transform: scale(1.2);
+}
+
+.tech p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+/* Development Tools Section */
+#dev-tools {
+    padding: 50px 0;
+    background-color: #080808;
+    text-align: center;
+}
+
+#dev-tools .sub-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.dev-icons {
+    display: flex;
+    justify-content: center;  /* Aligns the icons in the center */
+    align-items: center;      /* Vertically aligns the icons */
+    gap: 40px;                /* Adds space between the icons */
+    flex-wrap: wrap;          /* Ensures the icons wrap to a new line if the screen size is smaller */
+}
+
+.dev-tool {
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+}
+
+.dev-tool img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dev-tool img:hover {
+    transform: scale(1.2);
+}
+
+.dev-tool p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* <!-- <------------------services--------------> 
 #services{
     padding: 30px 0;
 
@@ -179,8 +330,8 @@ nav ul li a:hover::after{
     background: #000080;
     transform: translateY(-10px);
 
-}
-/* ---------portfolio------- */
+} */
+/* ---------Project------- */
 .portfolio{
     padding: 50px 0;
 }

@@ -21,7 +21,7 @@
                 <ul id="sidemenu">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
                     <li><a href="#Project">Project</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
@@ -37,7 +37,6 @@
     <!-- ----------about------------ -->
     <div id="about">
         <div class="container">
-
             <div class="row">
                 <div class="about-col-1">
                     <img src="images/user.png" alt="">
@@ -45,44 +44,188 @@
                 <div class="about-col-2">
                     <h5 class="sub-title">Let me tell you about me</h5>
                     <p>Meet Vansh: The Future of Tech <br>
-
                         I'm Vansh, a tech-savvy B.Tech student on a mission. I love solving problems with code, from apps to algorithms. I'm a lifelong learner, always staying ahead in the dynamic world of tech. Join me as I shape the future, one line of code at a time! 💻🚀🌟</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Delopment Tools')">Delopment Tools</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <div id="tech-stack">
+                                <div class="container">
+                                    <h1 class="sub-title">My Tech Stack</h1>
+                                    <div class="tech-icons">
+                                        <!-- Example Icons -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C">
+                                            <p>C</p>
+                                        </div>
+                                        <!-- Java -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+                                            <p>Java</p>
+                                        </div>
+                                        <!-- SQL -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" title="SQL">
+                                            <p>SQL</p>
+                                        </div>
+                                        <!-- HTML -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                                            <p>HTML5</p>
+                                        </div>
+                                        <!-- CSS -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                                            <p>CSS3</p>
+                                        </div>
+                                        <!-- JavaScript -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                                            <p>JavaScript</p>
+                                        </div>
+                                        <!-- PYTHON -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg
+                                            " alt="Python" title="Python">
+                                            <p>Python<p>
+                                        </div>
+                                        <!-- REACT -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+                                            <p>React</p>
+                                        </div>
+                                        <!-- BOOTSTRAP -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap">
+                                            <p>Bootstrap</p>
+                                        </div>
+                                        <!-- Tailwind -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" title="Tailwind CSS">
+                                            <p>Tailwind CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('Experiencs')">Experiencs</p>
-                            <p class="tab-links" onclick="opentab('Education')">Education</p>
-                         </div>
-                         <div class="tab-contents active-tab" id="Skills">
-                            <ul>
-                                <li><span>Language</span><br></li>
-                                <li><span>web-developer</span><br>HTML & CSS</li>
-                                <li><span>C-language</span><br>Coding in C</li>
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="Experiencs">
-                            <ul>
-                                <li><span>2021- current</span><br>Coding in C</li>
-                                <li><span>2022- current</span><br>web-developer</li>
-                                <!-- <li><span>2017-2019</span><br>Designer web/app interfaces</li> -->
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>high-school</span><br>K.V.Dogra lines, MEERUT</li>
-                                <li><span>intermediate</span><br>K.V.Dogra lines, MEERUT</li>
-                                <li><span>graduation(B-tech)</span><br>Krishna Instatute Of Engineering Technolo,GHAZIABAD</li>
-                            </ul>
-                         </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experiences">
+                        <h3>My Experiences</h3>
+                        <div class="experience-list">
+                            <div class="experience-card">
+                                <i class="fa-solid fa-code"></i>
+                                <div class="experience-info">
+                                    <h4>Problem solving in java</h4>
+                                    <span class="year">2021 - Current</span>
+                                    <p>Developed coding skills through various projects and practice in C programming language.</p>
+                                </div>
+                            </div>
+                            <div class="experience-card">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <div class="experience-info">
+                                    <h4>Web Developer</h4>
+                                    <span class="year">2022 - Current</span>
+                                    <p>Developing websites with HTML, CSS, JavaScript, and other web technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="Education">
+                        <h3>My Education</h3>
+                        <div class="education-list">
+                            <div class="education-card">
+                                <i class="fa-solid fa-school"></i>
+                                <div class="education-info">
+                                    <h4>High School</h4>
+                                    <span class="year">2018 - 2020</span>
+                                    <p>K.V. Dogra Lines, Meerut</p>
+                                </div>
+                            </div>
+                            <div class="education-card">
+                                <i class="fa-solid fa-school"></i>
+                                <div class="education-info">
+                                    <h4>Intermediate</h4>
+                                    <span class="year">2020 - 2022</span>
+                                    <p>K.V. Dogra Lines, Meerut</p>
+                                </div>
+                            </div>
+                            <div class="education-card">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div class="education-info">
+                                    <h4>Graduation (B.Tech)</h4>
+                                    <span class="year">2022 - Present</span>
+                                    <p>Krishna Institute of Engineering Technology, Ghaziabad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents"  id="Delopment Tools">
+                        <ul>
+                            <div id="dev-tools">
+                                <div class="container">
+                                    <h1 class="sub-title">My Development Tools</h1>
+                                    <div class="dev-icons">
+                                        <!-- VS Code -->
+                                        <div class="dev-tool">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="VS Code" title="VS Code">
+                                            <p>VS Code</p>
+                                        </div>
+                            
+                                        <!-- PyCharm -->
+                                        <div class="dev-tool">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" title="PyCharm">
+                                            <p>PyCharm</p>
+                                        </div>
+                            
+                                        <!-- Responsive Design -->
+                                        <div class="dev-tool">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Responsive Design" title="Responsive Design">
+                                            <p>Responsive Design</p>
+                                        </div>
+                            
+                                        <!-- DOM Manipulation -->
+                                        <div class="dev-tool">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="DOM Manipulation" title="DOM Manipulation">
+                                            <p>DOM Manipulation</p>
+                                        </div>
+                            
+                                        <!-- Chrome DevTools -->
+                                        <div class="dev-tool">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Chrome DevTools" title="Chrome DevTools">
+                                            <p>Chrome DevTools</p>
+                                        </div>
+                                        <!-- GIT -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
+                                            <p>Git</p>
+                                        </div>
+                                        <!-- GITHUB -->
+                                        <div class="tech">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub">
+                                            <p>GitHub</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- <------------------services------------  -->
+    
+<!-- <------------------services------------ 
 <div id="services">
 
     <div class="container">
-        <h1 class="sub-title">My services</h1>
+        <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-camera"></i>
@@ -104,7 +247,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
     <!-------portfolio-----  -->
     <div id="Project">
         <div class="container">
@@ -151,9 +294,9 @@
                 <p><i class="fa-solid fa-square-phone"></i>+91-9368008551</p>
                 <div class="social-icons">
                     <a href="https://instagram.com/_vansh__s._?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100053146036283"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/people/Vansh-Singh/pfbid02YLHDn4oAJx8fV4cWgQV2ToaTnHR1xo48RkQUWBWaSMsE9W276TVVrbZmVwKVduuel/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://github.com/vansh1056?tab=repositories"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/vansh-kiet-9b687a285/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/vansh-singh-9b687a285/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
             </div>
@@ -174,6 +317,6 @@
     </div>
 </div>
 </div>
-<link rel="stylesheet" href="index.js">
 </body>
+<script src="index.js"></script>
 </html>

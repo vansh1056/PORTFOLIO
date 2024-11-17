@@ -16,7 +16,7 @@ event.currentTarget.classList.add("active-link");
 
     function openmenu(){
         sidemenu.style.right = "0";
-    }
+    }portfolio
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
